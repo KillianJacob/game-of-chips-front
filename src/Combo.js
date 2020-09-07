@@ -1,3 +1,6 @@
+import Card from "./Card.js";
+import {data} from "../fr.js";
+
 class Combo {
   static factory(cards, combos) {
     cards = Card.ordered(cards)
@@ -93,6 +96,10 @@ class Combo {
   }
 
   name() {
-    return data.combos[this.constructor.name]
+
+    return data.combos[this.getId()]
+    
   }
 }
+
+export default Combo;

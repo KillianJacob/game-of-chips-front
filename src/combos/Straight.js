@@ -1,4 +1,14 @@
+import Combo from "../Combo.js";
+import Card from "../Card.js";
+
 class Straight extends Combo {
+
+  getId(){
+
+    return "Straight";
+
+  }
+
   static isAvailable(cards) {
     let values = cards.map(card => card.value())
     let found = 
@@ -18,3 +28,5 @@ class Straight extends Combo {
   }
 
 }
+
+export default Straight;

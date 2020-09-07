@@ -1,4 +1,13 @@
+import Combo from "../Combo.js";
+
 class TwoPairs extends Combo {
+
+  getId(){
+
+    return "TwoPairs";
+
+  }
+
   static isAvailable(cards) {
     let occureds = Combo.occureds(cards)
     let nbVals = Object.values(occureds).map(o => o.length)
@@ -6,3 +15,5 @@ class TwoPairs extends Combo {
     return nbVals.includes(2) && (nbVals.indexOf(2) !== nbVals.lastIndexOf(2))
   } 
 }
+
+export default TwoPairs;

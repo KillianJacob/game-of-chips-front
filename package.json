@@ -10,6 +10,9 @@
   "author": "Nicolas LE CHENIC",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.43.0"
+    "webpack": "^4.44.1"
+  },
+  "dependencies": {
+    "webpack-cli": "^3.3.12"
   }
 }

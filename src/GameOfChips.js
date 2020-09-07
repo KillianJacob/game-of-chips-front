@@ -1,3 +1,16 @@
+import Flush from "./combos/Flush.js";
+import FourOfAKind from "./combos/FourOfAKind.js";
+import FullHouse from "./combos/FullHouse.js";
+import HighCard from "./combos/HighCard.js";
+import Pair from "./combos/Pair.js";
+import RoyalFlush from "./combos/RoyalFlush.js";
+import Straight from "./combos/Straight.js";
+import StraightFlush from "./combos/StraightFlush.js";
+import ThreeOfAKind from "./combos/ThreeOfAKind.js";
+import TwoPairs from "./combos/ThreeOfAKind.js";
+import Deck from "./Deck.js";
+import Combo from "./Combo.js";
+
 const COMBOS = [
   {name: "RoyalFlush", class:RoyalFlush },
   {name: "StraightFlush", class: StraightFlush},
@@ -64,6 +77,8 @@ document.getElementById("deal").addEventListener('click', () => {
   let villainMessage = document.getElementById("villain-message");
   let win = document.getElementById("win");
   let loose = document.getElementById("loose");
+
+        console.log(playerOneCombo);
 
   heroMessage.innerText = playerOneCombo.name();
   villainMessage.innerText = playerTwoCombo.name();

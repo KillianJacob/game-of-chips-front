@@ -71,4 +71,4 @@ class Card {
     return Card.types().indexOf(this.type()) + 1
   }
 }
-
+export default Card;
